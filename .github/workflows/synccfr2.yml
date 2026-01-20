@@ -27,7 +27,7 @@ jobs:
           EOF
 
       - name: Test bucket access
-        run: "rclone lsd r2:"
+        run: "rclone ls r2:"
 
       - name: Sync links to R2
         run: |
