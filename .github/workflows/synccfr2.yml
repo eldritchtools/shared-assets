@@ -27,7 +27,7 @@ jobs:
           EOF
 
       - name: Test bucket access
-        run: "rclone ls r2:"
+        run: rclone ls r2:${{ secrets.R2_BUCKET }}
 
       - name: Sync links to R2
         run: |
